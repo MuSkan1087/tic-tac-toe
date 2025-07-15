@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #548687 ;
+    text-align: center;
+    background-image: url("img1.jpg");
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.background-blur {
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /* Behind content */
+}
+
+.main-content {
+    position: relative;
+    z-index: 1; /* Above blurred background */
+}
+
+
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height:18vmin ;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: solid black;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #d061d4;
+}
+#rset{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#newbt{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: #000000;
+    font-size: 5vmin;
+    border: solid white;
+    font-family: cursive;
+}
+
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide{
+    display: none;
+}
+
+.X{
+    color: rgb(255, 221, 3);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.O{
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 2rem;
+}
